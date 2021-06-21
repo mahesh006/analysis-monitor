@@ -1,0 +1,21 @@
+Title: <input type='text' name='title' id='title' value="{{post.name}}">
+<br>
+Author: <input type='text' name='author' id='author' value="{{post.tweets}}">
+<br>
+Post: <input type='text' name='content' id='content' value="{{post.content}}">
+
+{% for review in data %}
+                      <tr>
+                        <td>
+                          <div class="d-flex px-2">
+                            <div class="my-auto">
+                              <h6 class="mb-0 text-sm">{{review}}</h6>
+                            </div>
+                          </div>
+                        </td>  
+                      </tr>
+                      {% endfor %} 
+
+<script>
+   
+</script>

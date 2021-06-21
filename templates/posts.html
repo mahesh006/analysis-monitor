@@ -1,0 +1,23 @@
+
+<h1>All Posts</h1>
+
+ 
+<script>
+    let j = 2;
+    let positivevalue=[]
+    let negativevalue=[]
+    let neutralvalue=[]
+    let data = JSON.parse({{ positive | tojson }})
+
+    for (i=0;  i<data.length; i++){
+        console.log(data[i][j])
+        if(data[i][j]>0){
+            positivevalue.append(data[i][j])
+        }else if(data[i][j]<0){
+            negativevalue.append(data[i][j])
+        }else{
+            neutralvalue.append(data[i][j])
+        }      
+    }
+</script>
+
