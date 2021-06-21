@@ -211,3 +211,6 @@ def Compare():
     return render_template("competative_analysis.html", data=json.dumps(entries),positive=json.dumps(len(positive)), negative=json.dumps(len(negative)), neutral=json.dumps(len(neutral)), neg=neg, reviews=review, entries=entries)
 
 
+if __name__ == '__main__':
+   port = int(os.environ.get("PORT", 5000))
+   app.run(debug=True, port=port)
